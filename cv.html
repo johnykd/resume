@@ -1,11 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    display: flex;
+    justify-content: center;
+  background-color: #aaa;
+  width: 100%;
+  position: relative;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+.info{
+    position: absolute;
+    color: white;position: absolute;padding: 10px;
+}
+.profile{
+    
+    /* float: left;width: 100px;height: 100px; */
+
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 <body>
+
+<div class="header">
     
+        <img src="users.png" alt="" style="width: 170px;height: 170px;
+       
+        border: 2px solid #f3f3f3;
+        border-radius: 100px;
+        padding: 10px;
+        margin-right: 20px;"
+        >
+
+    
+  <h1>KAJONSAK SKOLVAREE
+      <br>
+   <p style="font-size: 14px;">Web Developer</p>   
+  </h1>
+  
+</div>
+
+<div class="topnav">
+  <!-- <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a> -->
+  <!-- <a href="#" style="float:right">Link</a> -->
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>PROFILE </h2>
+      
+      
+      <div class="fakeimg" style="height:200px; padding: 15px;">
+        <img src="colorado.jpg" alt="" style="float:left;width:50%;height:100%;">
+        <img src="colorado.jpg" alt="" style="float:left;width:50%;height:100%;">
+
+        <!-- <img src="wheelchair.png" alt="" style="max-width: 200px;"> -->
+        <!-- <img src="users.png" alt="" style="max-width: 200px;"> -->
+        </div>
+     <p>About me</p>
+     <p>I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+    </div>
+
+    <div class="card">
+        <div><h2>EXEPERIENCE</h2></div>
+      
+
+      <div style="height:200px;background-color: white;">
+        <br>
+        <p>
+            <!-- <div class="info"> -->
+            <strong>JUNIOR WEB DEVELOPER</strong>
+            <br><br>
+            ALLIANZ TECHONOLOGY (2020)
+             <br><br>
+             
+             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          
+            <!-- </div> -->
+            </p>
+    
+        </div>
+     
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>INFO</h2>
+      
+      <!-- <div class="fakeimg" style="height:200px; position: relative;"> -->
+    
+    <!-- <p style="color: white;position: absolute;padding: 10px;"> -->
+        <p>
+        <!-- <div class="info"> -->
+            <strong>NAME:</strong>
+         KAJONSAK SKOLVAREE
+        <br><br>
+        <strong>ADDRESS:</strong>
+         24/18
+         <br><br>
+         <strong>E-MAIL:</strong>
+         kajonsak.skl@gmail.com
+         <br><br>
+         <strong>PHONE:</strong>
+         085-2121263
+        <!-- </div> -->
+        </p>
+    </p>
+    
+    <!-- </div> -->
+
+    </div>
+    <div class="card">
+      <h3>SKILLS</h3>
+      
+      <p style="font-size: 15px;margin-top: 30px;">
+        <!-- <div class="info"> -->
+            <strong >PROGRAMMING</strong> <i class="fas fa-star" style="margin-left: 10px;"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <br><br>
+        <strong>HTML/CSS</strong> <i class="fas fa-star"style="margin-left: 10px;"></i><i class="fas fa-star"></i>
+         
+         <br><br>
+         <strong>VISUAL DESIGN</strong> <i class="fas fa-star"style="margin-left: 10px;"></i><i class="fas fa-star"></i>
+         <br><br>
+         <strong>BUSINESS</strong> <i class="fas fa-star"style="margin-left: 10px;"></i><i class="fas fa-star"></i>
+        <!-- </div> -->
+        </p>
+      <!-- <div class="fakeimg"><p></p></div>
+      <div class="fakeimg"><p></p></div>
+      <div class="fakeimg"><p></p></div> -->
+    </div>
+    <div class="card">
+      <h3>EDUCATION</h3>
+      <br>
+      <p>
+        
+        <strong>THAMMASAT UNIVERSITY </strong>
+        <br><br>
+        BACHELOR OF COMPUTER SCIENCE (2015-2020)
+         <br><br><br>
+         <strong>WATSUTHIWARARAM HIGH SCHOOL </strong>
+         <br><br>
+         MATH-ENG PROGRAM (2009-2015)
+          <br><br>
+         
+      
+      
+        </p>
+     
+    </div>
+  </div>
+</div>
+
+
+
 </body>
 </html>
