@@ -9,7 +9,7 @@
 body {
   font-family: Arial;
   padding: 10px;
-  background: #f1f1f1;
+  background: #155c31;
 }
 
 /* Header/Blog Title */
@@ -58,7 +58,7 @@ body {
 .rightcolumn {
   float: left;
   width: 25%;
-  background-color: #f1f1f1;
+  background-color: #155c31;
   padding-left: 20px;
 }
 
@@ -66,7 +66,7 @@ body {
 .fakeimg {
     display: flex;
     justify-content: center;
-  background-color: #aaa;
+  background-color: #155c31;
   width: 100%;
   position: relative;
 }
@@ -101,6 +101,11 @@ body {
     /* float: left;width: 100px;height: 100px; */
 
 }
+.interest{
+  display: flex;
+  justify-content: center;
+  
+}
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -118,6 +123,21 @@ body {
     width: 100%;
   }
 }
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3){
+    .topnav a {
+    float: none;
+    width: 100%;
+  }
+  body {
+  font-family: Arial;
+  padding: 10px;
+  background: #8b3333;
+}
+
+    }
 </style>
 
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -132,22 +152,20 @@ body {
         border: 2px solid #f3f3f3;
         border-radius: 100px;
         padding: 10px;
-        margin-right: 20px;"
+        margin-right: 20px;
+        background: #155c31;"
         >
 
     
   <h1>KAJONSAK SKOLVAREE
       <br>
-   <p style="font-size: 14px;">Web Developer</p>   
+   <p style="font-size: 18px;">Web Developer</p>   
   </h1>
   
 </div>
 
 <div class="topnav">
-  <!-- <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a> -->
-  <!-- <a href="#" style="float:right">Link</a> -->
+  
   
 </div>
 
@@ -156,39 +174,60 @@ body {
     <div class="card">
       <h2>PROFILE </h2>
       
-      
-      <div class="fakeimg" style="height:200px; padding: 5px;">
+      <p><b>About me</b>
+       </p>
+     <p style="font-size: 18px;">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+    
+      <div class="fakeimg" style="height:260px; padding: 5px;">
         <img src="colorado.jpg" alt="" style="float:left;width:50%;height:100%;">
-        <img src="colorado.jpg" alt="" style="float:left;width:50%;height:100%;">
+        <img src="california.jpg" alt="" style="float:left;width:50%;height:100%;">
 
-        <!-- <img src="wheelchair.png" alt="" style="max-width: 200px;"> -->
-        <!-- <img src="users.png" alt="" style="max-width: 200px;"> -->
+        
         </div>
-     <p>About me</p>
-     <p>I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+     
     </div>
 
     <div class="card">
         <div><h2>EXEPERIENCE</h2></div>
       
 
-      <div style="height:200px;background-color: white;">
+        <div style="height:200px;background-color: white;">
         <br>
-        <p>
-            <!-- <div class="info"> -->
-            <strong>JUNIOR WEB DEVELOPER</strong>
+          <p>
+            <strong>JUNIOR FRONTEND DEVELOPER</strong>
             <br><br>
             ALLIANZ TECHONOLOGY (2020)
-             <br><br>
-             
-             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+             <br><br>             
+             <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
           
-            <!-- </div> -->
             </p>
+            <p>
+              <strong>WEB DEVELOPER
+              
+               <br><br>GOOGLE (2019)             
+               <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+            
+              </p>
     
-        </div>
-     
+        </div>      
     </div>
+    <div class="card">
+      <div><h2>INTEREST</h2></div>
+    
+
+      <div style="height:80px;background-color: white;">
+      
+        
+        <div class="interest">
+          <i class="fas fa-laptop-code" style="font-size: 40px;padding-right: 50px;"></i>
+          <i class="fas fa-guitar" style="font-size: 40px;padding-right: 50px;"></i>
+          <i class="fas fa-biking" style="font-size: 40px;padding-right: 50px;"></i>
+          <i class="fas fa-futbol" style="font-size: 40px;padding-right: 50px;"></i>
+        </div>
+  
+      </div>      
+  </div>
+
   </div>
   <div class="rightcolumn">
     <div class="card">
@@ -215,6 +254,7 @@ body {
     </p>
     
     <!-- </div> -->
+
 
     </div>
     <div class="card">
